@@ -24,5 +24,6 @@ export const LOGO = `<?xml version="1.0" encoding="UTF-8"?>
 export const OFFER_ARRAY = [
   "Avail the limited time offer worth ₹15,000* on RV400 and RV400 BRZ",
   "The Ex-Showroom Prices of RV400 and RV400 BRZ slashed by 5,000",
-  "No Down Payment | No Hidden Charges | RV400 @ Just ₹4,444/ month"
-]
+  "No Down Payment | No Hidden Charges | RV400 @ Just ₹4,444/ month",
+];
+
