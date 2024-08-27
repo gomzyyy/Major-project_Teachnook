@@ -1,0 +1,10 @@
+.nav-book{
+    height: 380px;
+    width: 180px;
+    border: 1.8px solid rgb(142, 142, 142);
+    border-radius: 10px;
+    position: absolute;
+    top: 220px;
+    left: 12px;
+    padding: 20px;
+}
