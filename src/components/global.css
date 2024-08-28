@@ -2,43 +2,45 @@
   border: 2px solid rgb(2, 226, 226);
   background-color: white;
 }
+.color-selected{
+  border: 2px solid;
+  box-sizing: content-box;
+}
 
 .in-block {
   display: inline-block;
 }
-.col-lig-yellow {
+#Lightning_Yellow {
   background-color: #ffc600;
 }
-.col-ecl-red {
+#Eclipse_Red {
   background-color: #ba0c2f;
 }
-.col-ind-blue {
+#India_Blue {
   background-color: #0080fb;
 }
-.col-ste-black {
+#Stealth_Black {
   background-color: #363639;
 }
-.col-mis-grey {
+#Mist_Grey {
   background-color: #d1d3d4;
 }
-.col-cos-black0 {
+#Cosmic_Black {
   background-color: #262525;
 }
-.col-darlun-green {
+#Dark_Lunatic_Green {
   background-color: #535d4e;
 }
-.col-dar-silver {
+#Dark_Silver {
   background-color: #54585a;
 }
-.col-cos-black1 {
+#Cosmic_Black1 {
   background-color: #101820;
 }
-.col-reb-red {
+#Rebel_Red {
   background-color: #e4002b;
 }
-.col-pac-blue {
+#Pacific_Blue {
   background-color: #0880fb;
 }
-/* .colors{
-    height
-} */
+

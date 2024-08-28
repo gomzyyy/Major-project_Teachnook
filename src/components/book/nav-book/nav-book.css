@@ -48,30 +48,36 @@
   opacity: 0;
 }
 .offer:nth-child(1) {
-  animation: blur 4s ease 0.5s;
+  animation: blur 3s ease 0.5s;
   animation-iteration-count: 1;
 }
 .offer:nth-child(2) {
-  animation: blur 4s ease 5.4s;
+  animation: blur 3s ease 3.5s;
   animation-iteration-count: 1;
 }
 .offer:nth-child(3) {
-  animation: blur 4s ease 10s;
+  animation: blur 3s ease 6.5s;
   animation-iteration-count: 1;
 }
 .offer:nth-child(4) {
-  animation: blur_form 3s ease 13s;
+  animation: blur_form 3s ease 9.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
   font-weight: 300;
   letter-spacing: 0.9px;
+  display: flex;
+  gap: 7px;
+  width: fit-content;
 }
 @keyframes blur {
   0%{
 opacity: 0;
   }
-  50%{
+  25%{
+    opacity: 1;
+  }
+  75%{
     opacity: 1;
   }
   100%{
@@ -86,7 +92,12 @@ opacity: 0;
     opacity: 1;
   }
 }
-.booking-form{
+.offer .booking-form{
 text-decoration: underline;
 cursor: pointer;
+width: fit-content;
+transition: 0.1s ease-in;
+}
+.offer .booking-form:active{
+  color: yellow;
 }

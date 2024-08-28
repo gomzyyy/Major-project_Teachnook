@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.book-main {
+  height: calc(100vh - 35px);
+  background-color: white;
+}
+.bg-text{
+  height: 300px;
+  width: fit-content;
+  font-weight: 900;
+  padding: 0 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(232, 232, 232);
+  position: relative;
+  top: 10%;
+  left: 16%;
+}
+.product{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.product img{
+  height: 450px;
+  margin-left: 30px;
+}

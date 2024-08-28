@@ -26,4 +26,21 @@ export const OFFER_ARRAY = [
   "The Ex-Showroom Prices of RV400 and RV400 BRZ slashed by 5,000",
   "No Down Payment | No Hidden Charges | RV400 @ Just ₹4,444/ month",
 ];
+export const FEATURES = [
+  {
+icon:"battery.svg",
+label:"0-100%",
+description:"IN 4.5 HOURS*"
+  },
+  {
+    icon:"speed.svg",
+    label:"85 KM/H*",
+    description:"TOP SPEED"
+  },
+  {
+    icon:"calenderhours.svg",
+    label:"150 KMS*",
+    description:"Per Charge"
+  }
+]
 

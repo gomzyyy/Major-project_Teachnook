@@ -1,23 +1,25 @@
 import "./book-page.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import NavBook from "./nav-book/nav-book";
 import FeatureContainer from "../features/features-container";
+import BookMain from "./book-main/book-main";
 import BookForm from "./book-main/book-form/book-form";
+import BookContext from "./book-context";
 
-const BookMain = () => {
-  const [navOk, setNavOk] = useState(true);
-  const [formOk, setFormOK] = useState(true);
+const BookPage = () => {
+const {navOk, formOk} = useContext(BookContext)
+
 
   return (
     <main className="book">
-      {navOk && <NavBook navState={setNavOk} formState={setFormOK} />}
-        {formOk && <BookForm formState={setFormOK} />}
-      {/* <FeatureContainer /> */}
+      {navOk && <NavBook />}
+      <div className="book-container">
+        <BookMain formOk={formOk} />
+        {formOk && <BookForm navOk={navOk} />}
+      </div>
+      <FeatureContainer></FeatureContainer>
     </main>
   );
 };
 
-export default BookMain;
-{
-  /* <div dangerouslySetInnerHTML={{__html: LOGO}}/> */
-}
+export default BookPage;

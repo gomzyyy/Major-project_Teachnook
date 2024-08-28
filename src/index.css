@@ -4,3 +4,6 @@
     box-sizing: border-box;
     overflow: auto;
 }
+body, html{
+    overflow-x: hidden;
+}
