@@ -15,15 +15,15 @@ const FeatureContainer = () => {
       <div className="feature fea2">
         <img src={`./${FEATURES[1].icon}`} className="feaIcon" />
         <div className="feaContext">
-          <span className="feaLabel">{FEATURES[0].label}</span>
-          <span className="feaDescription">{FEATURES[0].description}</span>
+          <span className="feaLabel">{FEATURES[1].label}</span>
+          <span className="feaDescription">{FEATURES[1].description}</span>
         </div>
       </div>
       <div className="feature fea3">
         <img src={`./${FEATURES[2].icon}`} className="feaIcon" />
         <div className="feaContext">
-          <span className="feaLabel">{FEATURES[0].label}</span>
-          <span className="feaDescription">{FEATURES[0].description}</span>
+          <span className="feaLabel">{FEATURES[2].label}</span>
+          <span className="feaDescription">{FEATURES[2].description}</span>
         </div>
       </div>
     </div>

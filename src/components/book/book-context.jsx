@@ -1,15 +1,12 @@
 import { createContext, useState } from "react";
 
 const BookContext = createContext({
-  choosed: true,
-  colorName: "Lightning ellowY",
   navOk: true,
   formOk: false,
 });
 
 export const BookContextProvider = ({ children }) => {
-  const [choosed, setChoosed] = useState("RV400");
-  const [colorName, setColorName] = useState("Lightning Yellow");
+  const [choosed, setChoosed] = useState("Rhyno_SE03_Lite");
   const [navOk, setNavOk] = useState(true);
   const [formOk, setFormOk] = useState(false);
 
@@ -18,8 +15,6 @@ export const BookContextProvider = ({ children }) => {
       value={{
         choosed,
         setChoosed,
-        colorName,
-        setColorName,
         navOk,
         setNavOk,
         formOk,

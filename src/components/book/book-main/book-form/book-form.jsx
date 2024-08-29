@@ -1,25 +1,24 @@
 import "./book-form.css";
 import "../../../global.css";
 import { useContext } from "react";
-import { Colors1, Colors2 } from "./color-tray";
 import BookContext from "../../book-context";
 import { IoClose } from "react-icons/io5";
 
-const BookForm = ({ navOk }) => {
-  const { choosed, setChoosed, colorName, setColorName, setFormOk, setNavOk } =
+const BookForm = () => {
+  const { choosed, setChoosed, setFormOk, setNavOk, navOk } =
     useContext(BookContext);
 
   const handleChoosed1 = () => {
-    setChoosed("RV400");
-    setColorName("Lightning Yellow");
+    setChoosed("Rhyno_SE03_Lite");
+    console.log("clicked");
   };
   const handleChoosed2 = () => {
-    setChoosed("RV400_BRZ");
-    setColorName("Dark Lunatic Green");
+    setChoosed("Rhyno_SE03");
+    console.log("clicked");
   };
-  const handleChoosingColor = (e) => {
-    let colorChoosed = e.target.id.split("_").join(" ");
-    setColorName(colorChoosed);
+  const handleChoosed3 = () => {
+    setChoosed("Rhyno_SE03_Max");
+    console.log("clicked");
   };
   return (
     <div
@@ -27,14 +26,22 @@ const BookForm = ({ navOk }) => {
       style={{ height: navOk ? "calc(100vh - 35px)" : "100vh" }}
     >
       <div className="form-container">
-        <span className="form-close-btn"onClick={() => {setFormOk(false); setNavOk(true);}}><IoClose /></span>
+        <span
+          className="form-close-btn"
+          onClick={() => {
+            setFormOk(false);
+            setNavOk(true);
+          }}
+        >
+          <IoClose />
+        </span>
         <div className="top">
-          <div className="top-label">Book your Revolt</div>
+          <div className="top-label">Book your Rhyno</div>
           <div className="text-top">
             <span className="text-top-label">
               EMI starting from INR 4,444/mo.
             </span>
-            Get the RV400 at one month's petrol & servicing cost* of an
+            Get the Rhyno SE03 Max at one month's petrol & servicing cost* of an
             equivalent ICE bike.
             <p className="text">
               <span className="conditions">*T&C Apply</span>
@@ -42,34 +49,40 @@ const BookForm = ({ navOk }) => {
           </div>
           <div className="chooseModel">
             <div
-              className={`choose2 ${choosed === "RV400" && "selected"}`}
+              className="choose-main"
+              style={{
+                border: choosed === "Rhyno_SE03_Lite" && "2px solid #d0d0d0",
+                backgroundColor: choosed === "Rhyno_SE03_Lite" && "white",
+              }}
               onClick={handleChoosed1}
             >
-              RV400
+              Rhyno SE03 Lite
             </div>
             <div
-              className={`choose2 ${choosed === "RV400_BRZ" && "selected"}`}
+              className="choose-main"
+              style={{
+                border: choosed === "Rhyno_SE03" && "2px solid #d0d0d0",
+                backgroundColor: choosed === "Rhyno_SE03" && "white",
+              }}
               onClick={handleChoosed2}
             >
-              RV400 BRZ
+              Rhyno SE03
             </div>
-          </div>
-          <div className="chooseColor">
-            <span className="color-label">
-              Color: <span className="choosed-color-label">{colorName}</span>
-            </span>
-            <div className="colorsTray">
-              {choosed === "RV400" ? (
-                <Colors1 handleChoosingColor={handleChoosingColor} />
-              ) : (
-                <Colors2 handleChoosingColor={handleChoosingColor} />
-              )}
+            <div
+              className="choose-main"
+              style={{
+                border: choosed === "Rhyno_SE03_Max" && "2px solid #d0d0d0",
+                backgroundColor: choosed === "Rhyno_SE03_Max" && "white",
+              }}
+              onClick={handleChoosed3}
+            >
+              Rhyno SE03 Max
             </div>
           </div>
         </div>
         <p className="form-label">
           Please enter your personal details below for purchase and registration
-          of your Revolt Motorcycle.
+          of your Rhyno EV Bikes.
         </p>
         <form action="#" className="booking-form">
           <input

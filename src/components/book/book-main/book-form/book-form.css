@@ -80,67 +80,32 @@
 
 .chooseModel {
   height: 45px;
-  width: 210px;
+  width: 100%;
   display: flex;
-  gap: 0.5px;
+  gap: 10px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: #d8d8d8;
 }
-.choose1 {
+
+.choose {
   height: 100%;
-  width: 50%;
+  width: 30%;
   box-sizing: border-box;
   border: 1px solid transparent;
-}
-.choose2 {
-  height: 100%;
-  width: 50%;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-}
-.choose1,
-.choose2 {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   border-radius: 5px;
-  background-color: transparent;
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.chooseColor {
-  height: 100px;
-  width: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.color-label {
+  background-color: #d8d8d8;
   font-size: 1.1rem;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.colorsTray {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  width: 100%;
-}
-.colors {
-  height: 40px;
-  width: 40px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  cursor: pointer;
-}
 .form-label {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(91, 91, 91);
+  color: white;
 }
 
 .booking-form {
@@ -161,7 +126,7 @@
   outline: none;
   padding: 10px;
   font-size: 1.05rem;
-  border-radius: 3px;
+  border-radius: 6px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 200;
 }
@@ -180,7 +145,8 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 200;
   outline: none;
-  border-radius: 3px;
+  border-radius: 6px;
+  padding: 10px;
   border: 1px solid;
 }
 .verify-note{
@@ -242,13 +208,13 @@
 .bookBtn {
   height: 50px;
   width: 90%;
-  background-color: #7f7f7f;
-  color: white;
-  border-radius: 3px;
+  background-color: #d4d4d4;
+  color: rgb(65, 65, 65);
+  border-radius: 6px;
   border: none;
   font-size: 1.08rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 .bookBtn:active {
   background-color: #929292;

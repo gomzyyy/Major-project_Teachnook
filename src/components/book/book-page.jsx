@@ -7,15 +7,14 @@ import BookForm from "./book-main/book-form/book-form";
 import BookContext from "./book-context";
 
 const BookPage = () => {
-const {navOk, formOk} = useContext(BookContext)
-
+  const { navOk, formOk } = useContext(BookContext);
 
   return (
     <main className="book">
       {navOk && <NavBook />}
       <div className="book-container">
-        <BookMain formOk={formOk} />
-        {formOk && <BookForm navOk={navOk} />}
+        <BookMain />
+        {formOk && <BookForm />}
       </div>
       <FeatureContainer></FeatureContainer>
     </main>
