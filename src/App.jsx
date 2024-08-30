@@ -1,6 +1,6 @@
-import BookPage from "./components/book/book-page";
 import "./App.css";
 import { BookContextProvider } from "./components/book/book-context";
+import { NavbarContextProvider } from "./components/navbar/nav-contexAPI";
 import { Outlet } from "react-router";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
@@ -8,10 +8,11 @@ import Footer from "./components/footer/footer";
 function App() {
   return (
     <>
-      <Navbar />
+      <NavbarContextProvider>
+        <Navbar />
+      </NavbarContextProvider>
       <BookContextProvider>
-        <BookPage />
-        {/* <Outlet /> */}
+        <Outlet />
       </BookContextProvider>
       <Footer />
     </>

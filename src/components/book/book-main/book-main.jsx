@@ -35,9 +35,6 @@ const BookMain = () => {
       className="book-main"
       style={{ width: formOk ? "calc(100vw - 500px)" : "100vw", height: navOk ? "calc(100vh - 35px)" : "100vh"}}
     >
-      <div className="logo">
-        <img src="./LOGO.png" />
-      </div>
       {!formOk && (
         <div className="chooseModel-main">
           <div

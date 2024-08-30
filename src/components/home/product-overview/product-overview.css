@@ -1,0 +1,71 @@
+.overview-container{
+    height: 600px;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(122,120,122);
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.side{
+    height: 100%;
+    width: 49%;
+}
+.side1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 40px;
+}
+.product-label-home{
+font-size: 5rem;
+font-weight: 900;
+font-family: Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 20px;
+}
+.product-paragraph-home{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+}
+.book-btn-home{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "poppins";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: 0.2s linear;
+}
+.book-btn-home:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid;
+}
+.book-btn-home:active{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.side2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+.overview-image-home{
+    height: fit-content;
+    width: fit-content;
+}
+.overview-image-home img{
+    height: 420px;
+}

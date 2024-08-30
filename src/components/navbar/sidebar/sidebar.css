@@ -1,0 +1,80 @@
+.Link{
+  text-decoration: none;
+}
+
+.sidebar-nav {
+  width: 100vw;
+  height: 200px;
+  background-color: #464646;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s linear;
+  position: relative;
+}
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-options-container {
+  width: fit-content;
+  height: 70px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: 0.3s ease-in;
+}
+.sidebar-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 0 20px;
+}
+.sidebar-option {
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "poppins";
+  color: white;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-down {
+  transition: 0.1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products {
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 400;
+}
+.product-menu::before {
+  content: "· ";
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.opt1:hover,
+.opt2:hover,
+.opt4:hover,
+.opt5:hover,
+.product-menu:hover,
+.product-menu-label:hover {
+  color: rgb(222, 222, 222);
+}

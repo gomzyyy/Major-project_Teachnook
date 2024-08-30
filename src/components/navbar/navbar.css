@@ -1,0 +1,81 @@
+.options .Link{
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 10px;
+  height: 70px;
+  background-color: #464646;
+  overflow: hidden;
+  position: relative;
+}
+.nav-logo {
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+.nav-logo:hover{
+    background-color: rgba(255, 255, 255, 0.048);
+}
+.nav-logo img {
+  height: 50px;
+}
+
+.options-container {
+  width: fit-content;
+  height: 100%;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 100%;
+  gap: 40px;
+}
+.option {
+  list-style-type: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "poppins";
+  color: white;
+  cursor: pointer;
+}
+.option:hover {
+  color: rgb(222, 222, 222);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-menu {
+  width: fit-content;
+  height: 100%;
+}
+.icon-options {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.user,
+.menu-icon {
+  color: white;
+  cursor: pointer;
+}
+.user:hover,
+.menu-icon:hover {
+  color: rgb(222, 222, 222);
+}

@@ -1,0 +1,32 @@
+.features-home {
+    height: 150px;
+    width: fit-content;
+    border: 1.8px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .feature-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .feaIcon-home {
+    width: 40px;
+    color: white;
+  }
+  .feaContext-home {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .feaLabel-home {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 900;
+  }
+  .feaDescription-home {
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+  }

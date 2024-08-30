@@ -1,0 +1,47 @@
+.Part2{
+  padding: 40px;
+  padding-top: 0px;
+}
+.selection1{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.selection1 select{
+  padding: 10px 0px;
+  text-align: center;
+  margin:20px;
+  background-color: #DCDCDC;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 100px;
+}
+.selection2 select{
+  background-color: #DCDCDC;
+  width: 390px;
+  padding: 10px 0px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width:900px){
+  .Part2{
+    padding: 20px;
+    padding-top: 0px;
+  }
+  .Part2 h4{
+    font-size: 1.3rem;
+  }
+  .selection1 select{
+    padding: 5px 0px;
+    text-align: center;
+    margin:20px;
+    font-size: 0.9rem;
+  }
+  .selection2 select{
+    width: 39%;
+    padding: 5px 0px;
+    font-size: 0.9rem;
+  }
+}

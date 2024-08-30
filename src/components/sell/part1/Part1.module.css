@@ -1,0 +1,21 @@
+.Part1{
+  padding: 40px;
+}
+.Part1 h5{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.Part1 P{
+  font-weight: 500;
+}
+@media (max-width:900px){
+  .Part1 h5{
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .Part1 P{
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+}

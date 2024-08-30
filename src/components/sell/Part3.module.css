@@ -1,0 +1,49 @@
+.Part3{
+  padding: 40px;
+  padding-top: 0px;
+}
+.inputs{
+  display: flex;
+  margin: 20px 0px;
+}
+.inputs input{
+  background-color: #DCDCDC;
+  padding: 10px 30px;
+  margin: 20px 0px;
+  padding-right: 100px;
+}
+option{
+  background-color: white;
+}
+.Leadership_Permises select{
+  padding: 10px ;
+  margin-bottom : 30px;
+  width: 40%;
+  color: gray;
+  font-size: 1rem;
+  background-color: #DCDCDC;
+  font-weight: 600;
+}
+
+@media (max-width:900px){
+  .Part3{
+    padding: 20px;
+    padding-top: 0px;
+  }
+  .Part3 h4{
+    font-size: 1.3rem;
+  }
+  .inputs input{
+    background-color: #DCDCDC;
+    padding: 5px 10px;
+  }
+  .Leadership_Permises select{
+    padding: 10px ;
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .dealership{
+    font-size: 0.9rem;
+  }
+  
+}
