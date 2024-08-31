@@ -1,6 +1,6 @@
 .overview-container{
     height: 600px;
-    width: 90%;
+    width: 95%;
     border: 1px solid;
     border-radius: 10px;
     background-color: rgb(122,120,122);
@@ -24,6 +24,7 @@ font-size: 5rem;
 font-weight: 900;
 font-family: Calibri, 'Trebuchet MS', sans-serif;
 margin-left: 20px;
+color: rgb(44, 44, 44);
 }
 .product-paragraph-home{
     font-size: 1.1rem;

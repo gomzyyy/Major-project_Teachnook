@@ -1,0 +1,78 @@
+.compare-container {
+  height: 500px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  background-color: transparent;
+  position: relative;
+}
+.compare-container:hover{
+   background-color: rgb(113, 113, 113);
+}
+
+.compare-image {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compare-features-home {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.compare-context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+
+.compare-label {
+  width: 180px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.compare-text {
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.buy-button{
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "poppins";
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: 0.2s linear;
+  position: absolute;
+  bottom: 10px;
+  left: 48.5%;
+}
+.buy-button:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid;
+}
+.buy-button:active{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}

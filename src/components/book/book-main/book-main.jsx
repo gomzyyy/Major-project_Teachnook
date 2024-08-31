@@ -4,7 +4,7 @@ import "../../global.css";
 import BookContext from "../book-context";
 
 const BookMain = () => {
-  const { choosed, navOk, formOk, setFormOk, setChoosed } =
+  const { choosed, navOk, formOk, setFormOk, setChoosed, data, setData } =
     useContext(BookContext);
   const [image, setImage] = useState("");
 
@@ -19,21 +19,21 @@ const BookMain = () => {
 
   const handleChoosed1 = () => {
     setChoosed("Rhyno_SE03_Lite");
-    console.log("clicked");
   };
   const handleChoosed2 = () => {
     setChoosed("Rhyno_SE03");
-    console.log("clicked");
   };
   const handleChoosed3 = () => {
     setChoosed("Rhyno_SE03_Max");
-    console.log("clicked");
   };
 
   return (
     <div
       className="book-main"
-      style={{ width: formOk ? "calc(100vw - 500px)" : "100vw", height: navOk ? "calc(100vh - 35px)" : "100vh"}}
+      style={{
+        width: formOk ? "calc(100vw - 500px)" : "100vw",
+        height: navOk ? "calc(100vh - 35px)" : "100vh",
+      }}
     >
       {!formOk && (
         <div className="chooseModel-main">

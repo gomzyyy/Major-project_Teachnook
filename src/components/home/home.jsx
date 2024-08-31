@@ -3,6 +3,9 @@ import "./home.css";
 import "../global.css";
 import { Overview } from "./product-overview/product-overview";
 import { Link } from "react-router-dom";
+import { OVERVIEW_DATA } from "../../assets/data";
+import { COMPARE_ALL_DATA as compareData } from "../../assets/data";
+import CompareAll from "./compare-all/compare-all";
 
 
 const Home = () => {
@@ -18,13 +21,11 @@ const Home = () => {
           <img src="./ls-img.png" />
         </div>
       </div>
-      <div className="product-description-home">
-        <div className="product-overview"></div>
-        <div className="product-overview"></div>
-        <div className="product-overview"></div>
-      </div>
       <main className="overview-home">
-      <Overview/>
+      {OVERVIEW_DATA.map((data, i)=><Overview key={i} data={data}/>)}
+      </main>
+      <main className="compare-all" id="compare_">
+      {compareData.map((data, i)=><CompareAll key={i} data={data} />)}
       </main>
     </main>
   );

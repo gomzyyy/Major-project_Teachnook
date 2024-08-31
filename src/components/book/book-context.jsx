@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 const BookContext = createContext({
   navOk: true,
   formOk: false,
+  choosed:"Rhyno_SE03_Lite",
 });
 
 export const BookContextProvider = ({ children }) => {
@@ -18,8 +19,8 @@ export const BookContextProvider = ({ children }) => {
         navOk,
         setNavOk,
         formOk,
-        setFormOk,
-      }}
+        setFormOk
+            }}
     >
       {children}
     </BookContext.Provider>

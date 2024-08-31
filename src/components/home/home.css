@@ -65,15 +65,30 @@
     cursor: pointer;
 }
 .overview-home{
-    margin: 70px 5% 0 5%;
+    margin: 70px 2.5% 0 2.5%;
     display: flex;
     align-items: center;
-    justify-content: ce;
+    justify-content: center;
     flex-direction: column;
     gap: 40px;
     height: fit-content;
-    width: 90%;
+    width: 95%;
 }
 .overview-image-home img{
 height: 100px;
+}
+.compare-all{
+  margin: 70px 5% 70px 5%;
+  background-color: rgb(122,120,122);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  height: fit-content;
+  width: 90%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
 }
